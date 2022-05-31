@@ -390,6 +390,8 @@ footer .container > .logo {
   padding-bottom: 0px;
 }
 .contacts {
+  display: flex;
+  
   color: var(--white-color);
   background-color: var(--background-dark-color);
 }
