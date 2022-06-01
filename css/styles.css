@@ -144,6 +144,7 @@ header .container > .logo {
 /*   MAIN PAGES   */
 
 .order {
+  min-width: auto;
   background-color: var(--background-dark-color);
 }
 
@@ -390,8 +391,8 @@ footer .container > .logo {
   padding-bottom: 0px;
 }
 .contacts {
-  display: flex;
-  
+  min-width: 1200px;
+
   color: var(--white-color);
   background-color: var(--background-dark-color);
 }
