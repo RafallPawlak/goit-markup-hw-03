@@ -38,8 +38,6 @@ body {
 
 .container {
   margin: 0px auto;
-  padding-left: 15px;
-  padding-right: 15px;
   width: 1200px;
 }
 
@@ -144,7 +142,6 @@ header .container > .logo {
 /*   MAIN PAGES   */
 
 .order {
-  min-width: auto;
   background-color: var(--background-dark-color);
 }
 
@@ -153,7 +150,7 @@ header .container > .logo {
   flex-direction: column;
 }
 
-.order-container{
+.order-container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -257,7 +254,7 @@ header .container > .logo {
   text-align: center;
 }
 
-.agency-gallery{
+.agency-gallery {
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -288,6 +285,10 @@ header .container > .logo {
 }
 
 /*   MAIN PORTFOLIO   */
+
+.portfolio-button {
+ padding-bottom: 0px;
+}
 
 .filter-buttons {
   display: flex;
@@ -320,33 +321,23 @@ header .container > .logo {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.portfolio {
+  padding-top: 0px;
+}
+
 .portfolio-gallery {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  /*justify-content: space-between;*/
+  list-style: none;
 }
-
-.portfolio-gallery > li:nth-child(n + 4) {
-  margin-top: 30px;
-}
-
-.portfolio-gallery > li:nth-child(3n + 1) {
-  margin-left: 0px;
-}
-
-/*   second way of framing 
-
-.portfolio-gallery img {
-  margin-top: -1px;
-  margin-left: -1px;
-} */
 
 .portfolio-gallery > li {
-  margin-left: 30px;
-  flex-basis: calc(100% / 3 - 30px);
   width: 370px;
   height: 404px;
   background: var(--white-color);
-  list-style: none;
 }
 
 .portfolio-gallery img {
@@ -361,6 +352,12 @@ header .container > .logo {
   border-bottom: 1px solid var(--portfolio-gallery-border);
   border-left: 1px solid var(--portfolio-gallery-border);
 }
+
+/*   second way of framing 
+.portfolio-gallery img {
+  margin-top: -1px;
+  margin-left: -1px;
+} */
 
 .portfolio-gallery h3 {
   margin-left: 24px;
@@ -391,11 +388,10 @@ footer .container > .logo {
   padding-bottom: 0px;
 }
 .contacts {
-  min-width: 1200px;
-
   color: var(--white-color);
   background-color: var(--background-dark-color);
 }
+
 .contacts-footer address {
   font-style: normal;
 }
